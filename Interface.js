@@ -1,6 +1,6 @@
 const interfaces = Symbol("interfaces");
 
-let __implements = (this && this.__implements) || function() {
+let __implements = (this && this.__implements) || function(a) {
 	Object.defineProperty(a.prototype, interfaces, { value: [] });
 	for (let i = 1; i < arguments.length; i++) {
 		if (!arguments[i]) continue;
